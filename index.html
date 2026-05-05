@@ -80,6 +80,6 @@
 	<!-- Start of bodyEnd -->
     
     <!-- End of bodyEnd -->
-	<div id="fityesz-container"></div> <script> window.addEventListener('DOMContentLoaded', () => { const target = document.getElementById('fityesz-container'); if (target) { fetch('[https://fityesz.hu/warning/warning.html](https://fityesz.hu/warning/warning.html)') .then(r => r.text()) .then(html => { target.innerHTML = html; }) .catch(err => console.error("Nem sikerült a fetch:", err)); } }); </script> <!-- FITYESZ MOZGALOM DIV, HTML + CSS (Ez az egyetlen extra sor) -->
+	<div id="fityesz-container"></div> <script> window.addEventListener('DOMContentLoaded', () => { const target = document.getElementById('fityesz-container'); if (target) { fetch('https://fityesz.hu/warning/warning.html') .then(r => r.text()) .then(html => { target.innerHTML = html; }) .catch(err => console.error("Nem sikerült a fetch:", err)); } }); </script> <!-- FITYESZ MOZGALOM DIV, HTML + CSS (Ez az egyetlen extra sor) -->
 </body>
 </html>
