@@ -80,6 +80,6 @@
 	<!-- Start of bodyEnd -->
     
     <!-- End of bodyEnd -->
-	<script>window.addEventListener('DOMContentLoaded', () => {fetch('https://fityesz.hu/warning/warning.html').then(r => r.text()).then(h => document.getElementById('fityesz-container').innerHTML = h);});</script> <!-- FITYESZ MOZGALOM HTML (Ez az egyetlen extra sor) -->
+	<script> window.addEventListener('DOMContentLoaded', () => { const container = document.getElementById('fityesz-container'); if (container) { fetch('https://fityesz.hu/warning/warning.html') .then(response => { if (!response.ok) throw new Error("Hiba a betöltéskor"); return response.text(); }) .then(html => { container.innerHTML = html; }) .catch(err => console.error("Banner hiba:", err)); } }); </script> <!-- FITYESZ MOZGALOM HTML (Ez az egyetlen extra sor) -->
 </body>
 </html>
